@@ -33,8 +33,13 @@
 
 // headings
 h3.title a {
-	color: $color_shark;
+	color: $bodycolor;
 	text-decoration: none;
+}
+
+// btn
+h3.title a.social-btn {
+	color: rgba($bodycolor, 0.7);
 }
 
 // post list
@@ -49,14 +54,14 @@ h3.title a {
 		margin: 0 10px;
 		text-decoration: none;
 		background: $white;
-		color: $color_shark;
+		color: $bodycolor;
 		a {
 			@include font-rem(20);
 			text-decoration: none;
-			color: $color_shark;
+			color: $bodycolor;
 			font-weight: bolder;
             &:hover {
-                color: $red;
+                color: $bodycolor;
             }
 		}
 		p {
@@ -90,15 +95,15 @@ figcaption {
 // links
 a {
   transition: color .4s;
-  color: $color_shark;
+  color: $bodycolor;
   &:link {
-  	color: $color_shark;
+  	color: $bodycolor;
   }
   &:visited {
   	color: $color_tuatara;
   }
   &:hover {
-  	color: $red;
+  	color: rgba($bodycolor, 0.7);
   }
   &:active {
   	transition: color .3s;

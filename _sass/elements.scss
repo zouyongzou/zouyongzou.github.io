@@ -9,7 +9,7 @@
 	color: $color_shark;
 	&:hover {
 		box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
-		color: $red;
+		color: $bodycolor;
 	}
 }
 .social-btn {
@@ -107,7 +107,7 @@ hr {
 // images and figures
 img {
     display: block;
-	max-width: 100%;
+  	max-width: 100%;
     width: auto;
     height: auto;
     vertical-align: middle;
@@ -119,7 +119,7 @@ img {
 }
 .img-circle {
 	border-radius: 50%;
-	border: 10px solid $gray;
+	border: 10px solid rgba($bodycolor, 0.7);
 	height: 150px;
 	width: 150px;
 }

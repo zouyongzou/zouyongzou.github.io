@@ -1,6 +1,5 @@
 ---
 layout: compress
-title:  "Jekyll搭建博客"
 ---
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -8,9 +7,10 @@ title:  "Jekyll搭建博客"
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
+    <title>{{ site.title }}</title>
     {% include head.html %}
 </head>
-<body>
+<body unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
     {% include nav.html %}
     <!-- Header -->
     <header class="header flex" role="banner" id="particles-js">
@@ -21,7 +21,7 @@ title:  "Jekyll搭建博客"
                         </a>
                         <h3 class="title">
                             <a class="zoombtn" href="{{ site.url }}">
-                                <p style="font-size:1.2rem;font-weight:300">个人博客</p>
+                                <p style="font-size:1.2rem;font-weight:300">个人空间</p>
                             </a>
                         </h3>
                         <hr class="hr-line">
@@ -33,14 +33,14 @@ title:  "Jekyll搭建博客"
                         {% include social-links.html %}
                     <hr class="hr-line">
                     <h3 class="title">
-                            <a class="btn zoombtn" href="{{ site.url }}/about">
-                            关于
-                            </a>
                             <a class="btn zoombtn" href="{{ site.url }}/posts">
-                            Posts
+                            博客
                             </a>
                             <a class="btn zoombtn" href="{{ site.url }}/projects">
-                            Projects
+                            项目
+                            </a>
+                            <a class="btn zoombtn" href="{{ site.url }}/about">
+                            关于
                             </a>
                     </h3>
                 </div>

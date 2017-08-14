@@ -17,6 +17,12 @@ $(function() {
 
 // All others
 $(document).ready(function() {
+    // 判断客户端
+    var isNotPC = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+    if (isNotPC) {
+      $(".header").removeAttr("id").children('canvas').hide()
+    }
+
     // zoom in/zoom out animations
     if ($(".container").hasClass('fadeOut')) {
         $(".container").removeClass("fadeOut").addClass("fadeIn");

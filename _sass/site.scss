@@ -21,7 +21,7 @@ body {
 	background-attachment: fixed;
 	@media #{$small} {
 	    background-image: none !important;
-		background: $white;
+		background: $white0;
 	}
 }
 * {
@@ -73,7 +73,7 @@ body {
 	position: fixed;
 	width: 36rem;
 	max-width: 550px;
-	background-color: $white;
+	background-color: $white0;
 	color: $color_shark;
 	z-index: 1;
 	border-radius: 3px;
