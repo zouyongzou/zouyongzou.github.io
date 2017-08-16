@@ -2,12 +2,8 @@
 layout: post
 title:  "基本语法-Github Pages主题（Moon）"
 date:   2016-03-15
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-tag:
-- markdown
-- jekyll
-- 语法
-- 主题
+tags: [markdown, jekyll, 语法, 主题]
+feature: http://i.imgur.com/Ds6S7lJ.png
 comments: true
 ---
 
@@ -113,7 +109,7 @@ comments: true
 {% highlight liquid %}
 {% raw %}
 {% capture images %}
-	{{ site.url }}/assets/img/images/github-icon-a.png
+    {{ site.url }}/assets/img/images/github-icon-a.png
     {{ site.url }}/assets/img/images/github-icon-a.png
     {{ site.url }}/assets/img/images/github-icon-a.png
 {% endcapture %}
@@ -135,3 +131,15 @@ comments: true
 {% endcapture %}
 {% include gallery images=images caption="多张图片" cols=3 %}
 
+### 插入背景图片
+
+在头信息中加入
+~~~
+feature: http://i.imgur.com/Ds6S7lJ.png
+~~~
+url为http或https
+
+### 插入视频
+{% highlight html %}
+<iframe width="560" height="315" src="//www.youtube.com/embed/SU3kYxJmWuQ" frameborder="0"> </iframe>
+{% endhighlight %}
