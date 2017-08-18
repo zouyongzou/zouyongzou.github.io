@@ -1,14 +1,15 @@
 ---
-layout: post
-title:  "基本语法-Github Pages主题（Moon）"
-date:   2016-03-15
-tags: [markdown, jekyll, 语法, 主题]
-feature: http://i.imgur.com/Ds6S7lJ.png
+layout:   post
+title:    "基本语法-Github Pages主题（Moon）"
+date:     2016-04-15
+tags:     [markdown, jekyll, 语法, 主题]
+feature:  http://i.imgur.com/Ds6S7lJ.png
 comments: true
 ---
 
 ### 前言
 主题语法基于markdown，在两行三虚线包含的为 YAML 的格式的头部信息。
+<!--more-->
 
 ### 表格
 

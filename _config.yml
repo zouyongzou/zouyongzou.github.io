@@ -2,7 +2,7 @@
 title:              邹勇的个人空间
 bio:                '天下事有难易'
 description:        "Moon is a minimal, one column jekyll theme for your blog."
-reading_time:       true
+#reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
@@ -15,6 +15,7 @@ url:                https://zouyongzou.github.io
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown
+excerpt_separator:  "<!--more-->"
 highlighter:        rouge
 kramdown:
   auto_ids:         true
