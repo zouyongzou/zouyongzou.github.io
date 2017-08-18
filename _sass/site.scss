@@ -113,7 +113,7 @@ body {
 	@include transition(.5s);
 	@media #{$small} {
 		width: 90%;
-		padding: 2em 0;
+		padding: 0 0 2em;
 	    box-shadow: none;
 	}
 }
