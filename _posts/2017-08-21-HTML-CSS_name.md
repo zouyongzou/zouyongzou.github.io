@@ -3,7 +3,7 @@ layout:   post
 title:    "HTML 页面结构命名"
 date:     2016-04-20
 excerpt:  列举了HTML页面结构常用的CSS命名。
-tags:     [HTML, CSS, 命名]
+tags:     [HTML, CSS]
 ---
 
 #### html页面的CSS、DIV命名规则

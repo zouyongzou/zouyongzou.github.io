@@ -3,7 +3,7 @@ layout:   post
 title:    "JavaScript 中的事件委托"
 date:     2016-04-22
 excerpt:  事件委托：利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。即把事件加到父级上，触发执行效果。
-tags:     [JavaScript, 事件]
+tags:     [JavaScript]
 conments: true;
 ---
 

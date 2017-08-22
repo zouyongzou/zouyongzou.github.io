@@ -29,6 +29,9 @@
 	text-align: center;
 	font-weight: bold;
 	margin-bottom: 3rem;
+	@media #{$small} {
+		margin-bottom: 0;
+	}
 }
 #post-total {
 	color: #1a222c;
@@ -71,6 +74,7 @@ h3.title a.social-btn {
             }
 		}
 		p {
+			margin: 0;
 			font-weight: lighter;
 			@include font-rem(16);
 		}

@@ -2,7 +2,7 @@
 layout:   post
 title:    "基本语法-Github Pages 主题（Moon）"
 date:     2016-04-15
-tags:     [markdown, jekyll, 语法, 主题]
+tags:     [markdown, jekyll]
 feature:  http://i.imgur.com/Ds6S7lJ.png
 comments: true
 ---

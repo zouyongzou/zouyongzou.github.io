@@ -2,10 +2,12 @@
 layout:   post
 title:    "JavaScript DOM 操作"
 date:     2016-5-1
-excerpt:  本文参考自《DOM 启蒙》一书，简单列举了常用的 DOM 操作，学习更有效率地操作HTML，而非第三方库
-tags:     [JavaScript, DOM]
-conments: true;
+excerpt:  本文参考自《DOM 启蒙》一书，简单列举了常用的 DOM 操作，学习更有效率地操作HTML，而非第三方库。
+tags:     [JavaScript]
 ---
+
+本文参考自《DOM 启蒙》一书
+{: .notice}
 
 ##### 1、节点概览
 **节点属性：**  
