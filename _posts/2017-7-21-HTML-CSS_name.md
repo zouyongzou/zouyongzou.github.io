@@ -1,15 +1,15 @@
 ---
 layout:   post
-title:    "Jekyll搭建博客（测试）"
+title:    "HTML 页面结构命名"
 date:     2016-04-20
-excerpt:  Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过 Markdown （或者 Textile） 以及 Liquid 转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。
-tags:     [GitHub Page, jekyll, 博客]
+excerpt:  列举了HTML页面结构常用的CSS命名。
+tags:     [HTML, CSS, 命名]
 ---
 
 #### html页面的CSS、DIV命名规则
-##### CSS命名规则：
-含义|命名
----|---
+
+| 含义 | 命名 |
+|:--------|:-------:|--------:|
 头|header
 内容|content/contain
 尾|footer
@@ -46,4 +46,3 @@ tags:     [GitHub Page, jekyll, 博客]
 状态|status
 投票|vote
 合作伙伴|partner
-
