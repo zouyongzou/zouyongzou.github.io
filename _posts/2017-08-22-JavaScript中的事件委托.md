@@ -1,10 +1,10 @@
 ---
 layout:   post
 title:    "JavaScript 中的事件委托"
-date:     2016-04-22
+date:     2016-4-22
 excerpt:  事件委托：利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。即把事件加到父级上，触发执行效果。
 tags:     [JavaScript]
-conments: true;
+comments: true;
 ---
 
 ##### 事件委托：利用事件冒泡，只指定一个事件处理程序，就可以管理某一类型的所有事件。即把事件加到父级上，触发执行效果。
@@ -18,7 +18,7 @@ conments: true;
     <li></li>
     <li></li>
 </ul>
-{% endhighlight html %}
+{% endhighlight %}
 
 {% highlight javascript %}
 // 不使用事件委托
@@ -30,7 +30,7 @@ for (var i = 0; i < li.length; i++) {
     this.style.background = "";
   }
 }
-{% endhighlight javascript %}
+{% endhighlight %}
 
 这样就为所有<li>添加了鼠标事件，但有多个<li>时比较影响性能。
 
@@ -62,4 +62,4 @@ ul.onmouseout = function(e) {
     target.style.background = "";
   }
 }
-{% endhighlight javascript %}
+{% endhighlight %}

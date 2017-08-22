@@ -49,8 +49,6 @@ previousElementChild
 children：所有元素节点。  
 childElementCount：计算某个节点中的子元素节点数目。
 
-**HTML元素方法：**  
-insertAdjacentHTML()：('beforebegin||afterbegin||beforeend||afterend','htmlNode')。
 ##### 2、文档节点
 doctype  
 documentElement  
