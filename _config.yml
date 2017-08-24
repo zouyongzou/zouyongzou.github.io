@@ -1,7 +1,8 @@
 # Site
 title:              邹勇的个人空间
 bio:                '天下事有难易'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        "邹勇的个人空间"
+keywords:           "Web前端, 邹勇博客"
 #reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'

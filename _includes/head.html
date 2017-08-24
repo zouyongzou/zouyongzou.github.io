@@ -3,6 +3,7 @@
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
     {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
     <!-- Twitter Cards -->
     {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
