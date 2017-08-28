@@ -5,7 +5,7 @@ date:     2016-11-11
 excerpt:  实习也有一段时间了，总结一下艺师汇项目中所用的一些技术。
 project:  true
 tags:     [项目]
-comments: true;
+comments: true
 ---
 
 ###### 实习也有一段时间了，总结一下艺师汇项目中所用的一些技术。
