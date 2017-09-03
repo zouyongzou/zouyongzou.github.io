@@ -68,7 +68,7 @@ h3.title a.social-btn {
 			@include font-rem(20);
 			text-decoration: none;
 			color: $bodycolor;
-			font-weight: bolder;
+			font-weight: 500;
             &:hover {
                 color: $bodycolor;
             }
@@ -77,6 +77,19 @@ h3.title a.social-btn {
 			margin: 0;
 			font-weight: lighter;
 			@include font-rem(16);
+		}
+		p.excerpt {
+			line-height: 1.6;
+		}
+		p.info {
+			margin-top: 4px;
+			font-size: .9rem;
+			span {
+				margin-right: 15px;
+			}
+		}
+		.margin-right5 {
+			margin-right: 5px;
 		}
 	}
 }

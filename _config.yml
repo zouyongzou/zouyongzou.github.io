@@ -32,6 +32,12 @@ sass:
 # Comments
 disqus_shortname:   zouyongzou
 
+# 阅读次数
+leancloud:
+  enable: true
+  app_id: 9wsnJbHIUAY3d4PrKsg6q92H-gzGzoHsz
+  app_key: mAEpionhrt3pmDw3Lol6sRoN
+
 # Social
 # if you don't have any of social below, comment the line.
 #google:
