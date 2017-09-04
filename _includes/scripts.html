@@ -6,7 +6,7 @@
     <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
     <script src="{{ site.url }}/assets/js/scripts.js"></script>
     <script src="{{ site.url }}/assets/js/jPages.min.js"></script>
-    <script src="{{ site.url }}/assets/js/js.js"></script>
+    <!-- <script src="{{ site.url }}/assets/js/js.js"></script> -->
     <script type="text/javascript">
       $(function(){
         /* 初始化分页插件 */ 
@@ -42,3 +42,5 @@
     {% if page.comments != false %}
         {% include disqus_comments.html %}
     {% endif %}
+
+    {% include leancloud-analytics.html %}

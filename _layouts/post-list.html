@@ -30,12 +30,11 @@ layout: compress
                                 <p class="excerpt">{{ post.excerpt }}</p>
                                 <p class="info">
                                     <span><i class="fa fa-calendar margin-right5"></i>{{ post.date | date: "%Y-%m-%d" }}</span>
-                                    <span><i class="fa fa-eye margin-right5"></i>{{ post.date | date: "%Y-%m-%d" }}</span>
                                     {% if site.leancloud.enable %}
-                                    <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
-                                        <span class="post-meta-divider">|</span>
-                                        <span class="post-meta-item-text"> Hits:  </span>
-                                        <span class="leancloud-visitors-count"></span>
+                                    <span><i class="fa fa-eye margin-right5"></i>
+                                        <span id="{{ post.url }}" class="leancloud_visitors" data-flag-title="{{ post.title }}">
+                                            <span class="leancloud-visitors-count"></span>
+                                        </span>
                                     </span>
                                     {% endif %}
                                 </p>
@@ -52,6 +51,5 @@ layout: compress
     {% include scripts.html %}
     <script src="{{ site.url }}/assets/js/wow.min.js"></script>
     <script type="text/javascript">(new WOW).init();</script>
-    {% include leancloud-analytics.html %}
 </body>
 </html>

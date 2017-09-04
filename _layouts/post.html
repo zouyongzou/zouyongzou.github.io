@@ -17,7 +17,15 @@ layout: compress
             <div class="content">
                 <div class="post-title {% if page.feature %} feature {% endif %}">
                     <h1>{{ page.title }}</h1>
-                    <h4>{{ page.date | date: "%Y-%m-%d" }}</h4>
+                    <h4>
+                        <span><i class="fa fa-clock-o margin-right5"></i>{{ page.date | date: "%Y-%m-%d" }}</span>
+                        {% if site.leancloud.enable %}
+                        <span id="{{ page.url }}" class="leancloud_visitors" data-flag-title="{{ page.title }}">
+                            <span style="margin: 0 5px;"> | </span>
+                            浏览次数：<span class="leancloud-visitors-count"></span> 次
+                        </span>
+                    {% endif %}
+                    </h4>
                     {% if site.reading_time %}
                     <p class="reading-time">
                       <i class="fa fa-clock-o"></i>
@@ -49,6 +57,5 @@ layout: compress
     <!-- MathJax -->
     <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     {% endif %}
-    {% include leancloud-analytics.html %}
 </body>
 </html>
