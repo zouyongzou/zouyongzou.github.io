@@ -25,12 +25,16 @@ body {
 }
 * {
 	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
 }
 *::after {
 	box-sizing: border-box;
 }
 *::before {
 	box-sizing: border-box;
+}
+*:focus {
+	outline: none;
 }
 .header {
 	height: 100%;

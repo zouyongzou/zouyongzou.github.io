@@ -20,22 +20,16 @@ layout: compress
             <div class="container animated fadeIn">
                 <div class="row">
                         <h3 class="title">
-                            邹勇的个人空间
+                            {{ site.title }}
                         </h3>
                         <h3 class="title">
                             {{ site.bio }}
                         </h3>
                         {% include social-links.html %}
                         <h3 class="title">
-                                <a class="blog-btn zoombtn" href="{{ site.url }}/posts">
-                                博客
-                                </a>
-                                <a class="blog-btn zoombtn" href="{{ site.url }}/projects">
-                                项目
-                                </a>
-                                <a class="blog-btn zoombtn" href="{{ site.url }}/about">
-                                关于
-                                </a>
+                            <a class="blog-btn zoombtn" href="{{ site.url }}/posts">博客</a>
+                            <a class="blog-btn zoombtn" href="{{ site.url }}/projects">项目</a>
+                            <a class="blog-btn zoombtn" href="{{ site.url }}/tags">标签</a>
                         </h3>
                 </div>
             </div>
