@@ -13,40 +13,30 @@ layout: compress
     <title>{{ site.title }}</title>
     {% include head.html %}
 </head>
-<body unselectable="on" style="-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
+<body unselectable="on" style="background:#1a222c;-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
     {% include nav.html %}
     <!-- Header -->
     <header class="header flex" role="banner" id="particles-js">
             <div class="container animated fadeIn">
                 <div class="row">
-                        <!-- <a href="{{ site.url }}">
-                            <img src="{{ site.logo }}" class="img-circle zoombtn animated bounce">
-                        </a> -->
-                        <div class="wave" style="background-image: url('{{ site.logo }}');"></div>
                         <h3 class="title">
-                            <a class="zoombtn" href="{{ site.url }}">
-                                <p style="font-size:1.2rem;font-weight:300">邹勇的个人空间</p>
-                            </a>
+                            邹勇的个人空间
                         </h3>
-                        <hr class="hr-line">
                         <h3 class="title">
-                            <a href="{{ site.url }}">
-                                <p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
-                            </a>
+                            {{ site.bio }}
                         </h3>
                         {% include social-links.html %}
-                    <hr class="hr-line">
-                    <h3 class="title">
-                            <a class="btn zoombtn" href="{{ site.url }}/posts">
-                            博客
-                            </a>
-                            <a class="btn zoombtn" href="{{ site.url }}/projects">
-                            项目
-                            </a>
-                            <a class="btn zoombtn" href="{{ site.url }}/about">
-                            关于
-                            </a>
-                    </h3>
+                        <h3 class="title">
+                                <a class="blog-btn zoombtn" href="{{ site.url }}/posts">
+                                博客
+                                </a>
+                                <a class="blog-btn zoombtn" href="{{ site.url }}/projects">
+                                项目
+                                </a>
+                                <a class="blog-btn zoombtn" href="{{ site.url }}/about">
+                                关于
+                                </a>
+                        </h3>
                 </div>
             </div>
             <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1389" height="925"></canvas> 

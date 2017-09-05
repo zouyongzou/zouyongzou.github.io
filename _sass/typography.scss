@@ -13,18 +13,6 @@
 }
 
 // titles
-.title {
-	text-align: center;
-	font-weight: bold;
-	> p {
-		text-align: center;
-		font-weight: bold;
-	}
-	> a > p {
-		text-align: center;
-		font-weight: bold;
-	}
-}
 .post-title {
 	text-align: center;
 	font-weight: bold;
@@ -41,13 +29,33 @@
 
 // headings
 h3.title a {
-	color: $bodycolor;
+	color: $white0;
 	text-decoration: none;
 }
 
 // btn
 h3.title a.social-btn {
 	color: rgba($bodycolor, 0.7);
+	.icon {
+		width: auto;
+		text-align: center;
+		color: $white0;
+		font-size: 20px;
+		padding: 10px;
+		margin: 2px;
+		border-radius: 50%;
+		border: 2px solid $white0;
+		transition: all .5s;
+		&:hover {
+			color: $bodycolor;
+			background: $white0;
+		}
+	}
+}
+h3.title a.blog-btn {
+	padding: 5px 0;
+	margin: 0 5px;
+	font-weight: normal;
 }
 
 // post list

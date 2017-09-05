@@ -12,11 +12,6 @@
 		color: $bodycolor;
 	}
 }
-.social-btn {
-	padding: 10px;
-	margin: 10px;
-	@extend %btnextend;
-}
 .btn {
 	padding: 5px 12px;
 	@include font-rem(14);
