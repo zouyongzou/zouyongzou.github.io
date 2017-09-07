@@ -3,7 +3,7 @@ layout:   post
 title:    "基本语法-Github Pages 主题（Moon）"
 date:     2016-04-15
 tags:     [markdown, jekyll]
-feature:  http://i.imgur.com/Ds6S7lJ.png
+feature:  /assets/img/images/github-icon-a.png
 comments: true
 ---
 
