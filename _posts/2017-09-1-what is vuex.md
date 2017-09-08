@@ -2,7 +2,7 @@
 layout:   post
 title:    "Vuex 使用总结"
 date:     2016-12-12
-excerpt:  详细介绍 Vuex 的使用。
+excerpt:  入 Vue 的坑已经一个多月了，自己也开发了一些组件，但对 Vuex 还是一知半解，所以上 Vuex 官网及网上找了些帖子，总结一下 Vuex 的使用。
 tags:     [Vue]
 #comments: true
 ---
@@ -46,21 +46,65 @@ Vue Component（组件）接收用户操作等交互行为，执行 dispatch 方
 {% highlight javascript %}
 // 需先引入 Vue,Vuex
 Vue.use(Vuex)
+
 const store = new Vuex.Store({
   state: {
     // 应用状态的数据
   },
   actions: {
-    // 
+    // 提交 mutation 触发执行
+    // 异步/同步
   },
   mutations: {
-
+    // commit mutation
+    // 类似 事件
+    // 可更改 state
+    // 同步
   },
   getters: {
-    // 从 store 中的 state 中派生出一些状态
-  },  
-  modules: {
-    
+    // state 数据处理，可以认为是 store 的计算属性
   }
 })
 {% endhighlight %}
+针对大型应用，可将 store 分割成**模块**（module）
+{% highlight javascript %}
+const store = new Vuex.Store({
+  modules: {
+    a: moduleA,
+    b: moduleB
+  }
+})
+const moduleA = {
+  state: { ... },
+  mutations: { ... },
+  actions: { ... },
+  getters: { ... }
+}
+
+const moduleB = {
+  state: { ... },
+  mutations: { ... },
+  actions: { ... }
+}
+
+store.state.a // -> moduleA 的状态
+store.state.b // -> moduleB 的状态
+{% endhighlight %}
+#### 项目结构
+项目结构按照官方示例组织代码：
+<pre>
+  ├── index.html
+  ├── main.js
+  ├── api
+  │   └── ... # 抽取出API请求
+  ├── components
+  │   ├── App.vue
+  │   └── ...
+  └── store
+      ├── index.js          # 我们组装模块并导出 store 的地方
+      ├── actions.js        # 根级别的 action
+      ├── mutations.js      # 根级别的 mutation
+      └── modules
+          ├── cart.js       # 购物车模块
+          └── products.js   # 产品模块
+</pre>
