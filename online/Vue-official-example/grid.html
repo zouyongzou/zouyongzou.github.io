@@ -73,26 +73,30 @@
     <!-- component template -->
     <!-- 表格模板 -->
     <script type="text/x-template" id="grid-template">
+        <!-- 如果能找到匹配的元素，显示表格详情 -->
         <table v-if="filteredData.length">
-        <thead>
-            <tr>
-            <th v-for="key in columns"
-                @click="sortBy(key)"
-                :class="{ active: sortKey == key }">
-                {{ key | capitalize }}
-                <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-                </span>
-            </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr v-for="entry in filteredData">
-            <td v-for="key in columns">
-                {{entry[key]}}
-            </td>
-            </tr>
-        </tbody>
+            <thead>
+                <tr>
+                <!-- 遍历 colnums，key 为 value -->
+                <th v-for="key in columns"
+                    @click="sortBy(key)"
+                    :class="{ active: sortKey == key }">
+                    {{ key | capitalize }}
+                    <!-- 改变箭头的方向 -->
+                    <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
+                    </span>
+                </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="entry in filteredData">
+                <td v-for="key in columns">
+                    {{entry[key]}}
+                </td>
+                </tr>
+            </tbody>
         </table>
+        <!-- 如果找不到，显示这一部分 -->
         <p v-else>No matches found.</p>
     </script>
 
@@ -122,7 +126,7 @@
                 filterKey: String
             },
             data: function () {
-                // 将传入的 columns 转成对象的 key，value 为 1，正序排序
+                // 将传入的 columns 转成对象的 key，value 为 1，正序排序 -1 反序
                 var sortOrders = {}
                     this.columns.forEach(function (key) {
                     sortOrders[key] = 1
@@ -135,17 +139,23 @@
             computed: {
                 filteredData: function () {
                     var sortKey = this.sortKey
+                    // 获取要查询的 value
                     var filterKey = this.filterKey && this.filterKey.toLowerCase()
+                    // 初始为 1，正序
                     var order = this.sortOrders[sortKey] || 1
                     var data = this.data
                     if (filterKey) {
+                        // row 为一组对象 -> { name: 'Chuck Norris', power: Infinity }
                         data = data.filter(function (row) {
+                            // Object.keys(row) 返回由 row 的 key 组成的一个数组 -> ["name", "power"]
                             return Object.keys(row).some(function (key) {
+                                // 返回对象 “value” 含有 “filter" 的数据
                                 return String(row[key]).toLowerCase().indexOf(filterKey) > -1
                             })
                         })
                     }
                     if (sortKey) {
+                        // 对象数组排序方法
                         data = data.slice().sort(function (a, b) {
                             a = a[sortKey]
                             b = b[sortKey]
@@ -156,13 +166,17 @@
                 }
             },
             filters: {
+                // 首字母大写
                 capitalize: function (str) {
                     return str.charAt(0).toUpperCase() + str.slice(1)
                 }
             },
             methods: {
+                // 点击触发事件
                 sortBy: function (key) {
+                    // 将当前索引（key）赋值给 sortKey
                     this.sortKey = key
+                    // 改变排序 正序/反序
                     this.sortOrders[key] = this.sortOrders[key] * -1
                 }
             }
