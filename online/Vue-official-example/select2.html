@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js wrapper component example (jquery plugin: select2)</title>
+    <script src="/assets/js/vue.min.js"></script>
+    <!-- 引入 jQuery 及 select2 插件 -->
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/select2@4.0.3"></script>
+    <link href="https://unpkg.com/select2@4.0.3/dist/css/select2.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            font: 13px/18px sans-serif;
+        }
+        select {
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="el">
+    </div>
+        
+    <!-- using string template here to work around HTML <option> placement restriction -->
+    <script type="text/x-template" id="demo-template">
+        <div>
+            <p>Selected: {{ selected }}</p>
+            <select2 :options="options" v-model="selected">
+                <option disabled value="0">Select one</option>
+            </select2>
+        </div>
+    </script>
+        
+    <script type="text/x-template" id="select2-template">
+        <select>
+            <slot></slot>
+        </select>
+    </script>
+        
+    <script>
+        Vue.component('select2', {
+            props: ['options', 'value'],
+            template: '#select2-template',
+            // 挂载后
+            mounted: function () {
+                // 当前组件
+                var vm = this
+                // select2 方法
+                $(this.$el)
+                  .val(this.value)
+                  // init select2
+                  .select2({ data: this.options })
+                  // emit event on change.
+                  .on('change', function () {
+                     vm.$emit('input', this.value)
+                })
+            },
+            watch: {
+                // 
+                value: function (value) {
+                    // update value
+                    $(this.$el).val(value).trigger('change')
+                },
+                options: function (options) {
+                    // update options
+                    $(this.$el).select2({ data: options })
+                }
+            },
+            //
+            destroyed: function () {
+                $(this.$el).off().select2('destroy')
+            }
+        })
+        // 将 template 挂载到 #el 上，实例挂载之后，可以用 vm.$el 访问节点
+        var vm = new Vue({
+            el: '#el',
+            template: '#demo-template',
+            data: {
+                selected: 0,
+                options: [
+                    { id: 1, text: 'Hello' },
+                    { id: 2, text: 'World' }
+                ]
+            }
+        })
+    </script> 
+</body>
+</html>

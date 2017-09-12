@@ -45,3 +45,28 @@ Vue 官方文档经常查看，但是官方示例一直没有看😅😅😅。�
 如题（哈哈，这个厉害👍）  
 [在线预览](/online/Vue-official-example/elastic-header.html) | 
 [Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/elastic-header.html)
+
+**内嵌组件**  
+在本例中，我们整合了第三方 jQuery 插件 (select2)，怎么做到的呢？就是把它内嵌在一个常用组件中。  
+[在线预览](/online/Vue-official-example/select2.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/select2.html)
+
+**实时 deepstreamHub**  
+这个例子使用 deepstreamHub 在客户端之间实时同步数据、发送事件、远程程序调用 (你可以多开几个浏览器窗口试一试)。  
+[在线预览](/online/Vue-official-example/select2.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/select2.html)
+
+**Firebase + 验证**  
+本示例使用 Firebase 作为数据存储后端，同时在客户端进行数据实时同步 (你可以在多个浏览器窗口去打开它来验证)。另外，它通过计算属性实时验证，并且添加／移除选项时触发 CSS 过渡。  
+[在线预览](/online/Vue-official-example/select2.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/select2.html)
+
+**TodoMVC**  
+本例是一个完全和规范一致的 TodoMVC 实现，只用了 120 行有效的 JavaScript (不包含注释和空行)。  
+[在线预览](/online/Vue-official-example/select2.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/select2.html)
+
+**HackerNews 克隆**  
+HackerNews 克隆是基于 HN 的官方 firebase API 、Vue 2.0 、vue-router 和 vuex 来构建的，使用服务器端渲染。  
+[在线预览](/online/Vue-official-example/select2.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/select2.html)
