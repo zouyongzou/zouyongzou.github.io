@@ -2,12 +2,12 @@
 layout:   post
 title:    "Vue 官方示例解析"
 date:     2017-8-12
-excerpt:  Vue 官方文档经常查看，但是官方示例一直没有看😅，今天抽点时间看一看示例，在代码写入了一些注释，和自己的一些理解，希望能有所帮助。
+excerpt:  Vue 官方文档经常查看，但是官方示例一直没有看，今天抽点时间看一看示例，在代码写入了一些注释，和自己的一些理解，希望能有所帮助。
 tags:     [Vue]
 comments: true
 ---
 
-Vue 官方文档经常查看，但是官方示例一直没有看😅，今天抽点时间看一看示例，在代码写入了一些注释，和自己的一些理解，希望能有所帮助。（本示例中为了方便，将 CSS 和 JavaScript 都写在 HTML 中，实际开发不建议）
+Vue 官方文档经常查看，但是官方示例一直没有看😅😅😅。今天抽点时间看一看示例，在代码写入了一些注释，和自己的一些理解，希望能有所帮助。（本示例中为了方便，将 CSS 和 JavaScript 都写在 HTML 中，实际开发不建议）
 
 **Markdown 编辑器**  
 蠢萌的 Markdown 编辑器（是挺蠢的，一点都不萌）  
@@ -35,3 +35,13 @@ Vue 官方文档经常查看，但是官方示例一直没有看😅，今天抽
 [Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/svg.html) | 
 [SVG 相关](https://developer.mozilla.org/en-US/docs/Web/SVG)
 
+**模式组件**  
+使用到的特性：组件，prop 传递，内容插入(content insertion)，过渡（transitions）。  
+[在线预览](/online/Vue-official-example/modal.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/modal.html) | 
+[Vue 过渡 & 动画](https://cn.vuejs.org/v2/guide/transitions.html)
+
+**具有伸缩性的 Header**  
+如题（哈哈，这个厉害👍）  
+[在线预览](/online/Vue-official-example/elastic-header.html) | 
+[Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/elastic-header.html)
