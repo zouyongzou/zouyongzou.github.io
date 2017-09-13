@@ -40,9 +40,9 @@ leancloud:
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
-  #analytics:
+google:
+  #plus:            username
+  analytics:       true
   #verify:
   #ad-client:
   #ad-slot:

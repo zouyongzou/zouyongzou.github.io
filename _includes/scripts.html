@@ -5,28 +5,7 @@
 <script src="{{ site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
 <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
 <script src="{{ site.url }}/assets/js/scripts.js"></script>
-<script src="{{ site.url }}/assets/js/jPages.min.js"></script>
-<!-- <script src="{{ site.url }}/assets/js/js.js"></script> -->
-<script type="text/javascript">
-	$(function(){
-	/* 初始化分页插件 */ 
-	$('div.page-holder').jPages({          /* 页码 */
-		containerID  : 'page-itemContainer', /* 分页id */
-		previous: '上一页',
-		next: '下一页',
-		perPage      : 10,                   /* 每页数量 */
-		startPage    : 1,                    /* 起始页 */
-		startRange   : 1,
-		midRange     : 3,
-		endRange     : 1
-	});
 
-	/* 文章篇数 */ 
-	var total = $('#page-itemContainer').children('li').length;
-	var str = '（'+ total +' 篇）';
-	$('#post-total').html(str);
-	});
-</script>
 {% if site.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
@@ -40,6 +19,16 @@
 
 </script>
 {% endif %}
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?5c737268fd72a1395471cf0c05656548";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+	
 {% if page.comments != false %}
 	{% include disqus_comments.html %}
 {% endif %}
