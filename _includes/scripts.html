@@ -7,6 +7,7 @@
 <script src="{{ site.url }}/assets/js/jquery.fitvid.min.js"></script>
 <script src="{{ site.url }}/assets/js/scripts.js"></script>
 
+{% if jekyll.environment == "production" %}
 {% if site.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
@@ -29,6 +30,7 @@
 	  s.parentNode.insertBefore(hm, s);
 	})();
 </script>
+{% endif %}
 	
 {% if page.comments != false %}
 	{% include disqus_comments.html %}
