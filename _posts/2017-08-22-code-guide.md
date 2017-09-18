@@ -3,7 +3,7 @@ layout:   post
 title:    "前端开发规范"
 date:     2016-5-20
 excerpt:  前端团队开发规范
-tags:     [前端]
+tags:     [Web]
 ---
 
 转载自[Code Guide by @AlloyTeam](http://alloyteam.github.io/CodeGuide/)

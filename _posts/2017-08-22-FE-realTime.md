@@ -3,7 +3,7 @@ layout:   post
 title:    "前端实时可视化开发工具"
 date:     2016-6-6
 excerpt:  介绍4种前端实时可视化开发工具，在开发过程不用手动刷新浏览器，修改代码后，立即体现效果，极大的提高前端开发效率
-tags:     [前端]
+tags:     [Web]
 comments: true;
 ---
 
