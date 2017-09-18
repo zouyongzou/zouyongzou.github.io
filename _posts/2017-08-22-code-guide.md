@@ -298,3 +298,5 @@ debugger不要出现在提交的代码里；
 行尾不要有空白字符；    
 switch的falling through和no default的情况一定要有注释特别说明；     
 不允许有空的代码块。
+
+（完）

@@ -82,3 +82,5 @@ $ npm login
 // 3. 发布项目，
 $ npm publish
 ```
+
+（完）

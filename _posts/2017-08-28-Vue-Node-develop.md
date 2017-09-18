@@ -133,3 +133,5 @@ module.exports = router
 具体配置可参考[官方文档](https://vuejs-templates.github.io/webpack/proxy.html)
 
 ###### [原文](http://blog.csdn.net/qq_26598303/article/details/53468399)
+
+（完）

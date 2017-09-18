@@ -139,4 +139,6 @@ async可以覆盖\<script\>元素在web浏览器构造DOM时的默认的顺序�
 ##### 11、DOM事件
 preventDefault()：撤销浏览器默认事件。  
 stopPropagation()：终止事件流程。  
-stopImmediatePropagation()：终止事件流程与相同目标上的其他事件。  
+stopImmediatePropagation()：终止事件流程与相同目标上的其他事件。
+
+（完）  

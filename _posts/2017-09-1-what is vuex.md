@@ -108,3 +108,5 @@ store.state.b // -> moduleB 的状态
           ├── cart.js       # 购物车模块
           └── products.js   # 产品模块
 </pre>
+
+（完）

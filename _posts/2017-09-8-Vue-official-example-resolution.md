@@ -70,3 +70,5 @@ Vue 官方文档经常查看，但是官方示例却没有看过😅😅😅。�
 HackerNews 克隆是基于 HN 的官方 firebase API 、Vue 2.0 、vue-router 和 vuex 来构建的，使用服务器端渲染。  
 [在线预览](/online/Vue-official-example/select2.html) | 
 [Github 地址](https://github.com/zouyongzou/zouyongzou.github.io/blob/master/online/Vue-official-example/select2.html)
+
+（完）
