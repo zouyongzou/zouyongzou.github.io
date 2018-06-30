@@ -1,23 +1,22 @@
 ---
-layout:   post
 title:    "Vue + Node 开发"
 date:     2017-4-28
 excerpt:  搭建了一个 Vue + Node + MySQL 的项目。前端用 Vue 开发页面，路由通过 axios 实现；后端用 Node 开发 api
-tags:     [Vue, Node]
+tags:     [Vue, Node.js]
 comments: true
 ---
 
-#### 开发流程
+## 开发流程
 1. 前后端分离。前端用 Vue 开发页面，路由通过 axios 实现；后端用 Node 开发 api
 2. 前端开发修改 Vue-cli 提供的 proxyTable 进行代理，跨域调用
 
-#### 具体实现
+## 具体实现
 1.在 Vue 项目的根目录下新建 server 目录，存放服务器相关文件，进入 server 目录，新建三个 js 文件，安装 express。    
 -index.js（入口文件）   
 -db.js（数据库操作）    
 -api.js（api 开发）   
 
-{% highlight javascript %}
+```javascript
 // server/index.js
 // 引入编写好的api
 const api = require('./api')
@@ -49,9 +48,9 @@ var uri = 'http://localhost:' + port
 app.listen(port)
 console.log('\n> Starting server...')
 console.log('> Listening at ' + uri + '\n')
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+```javascript
 // server/db.js
 // MySQL数据库连接配置
 module.exports = {
@@ -63,9 +62,9 @@ module.exports = {
     port: 3306
   }
 }
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+```javascript
 // server/api.js
 var mysql = require('mysql')
 var express = require('express')
@@ -113,11 +112,11 @@ router.get('/api/queryAll', function (req, res, next) {
 
 module.exports = router
 
-{% endhighlight %}
+```
 
 2.开启代理服务。因为 Vue 项目开发时，会自动开启一个8080端口的服务器，而后端为8081，造成了跨域。进入project-name/config/index.js 可设置开启代理服务。
 
-{% highlight javascript %}
+```javascript
 ...
  proxyTable: {
         '/api': {
@@ -129,9 +128,7 @@ module.exports = router
       }
     }
 ...
-{% endhighlight %}
+```
 具体配置可参考[官方文档](https://vuejs-templates.github.io/webpack/proxy.html)
 
 ###### [原文](http://blog.csdn.net/qq_26598303/article/details/53468399)
-
-（完）

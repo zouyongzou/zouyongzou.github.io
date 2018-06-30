@@ -1,42 +1,11 @@
 ---
-layout: compress
+layout: archive
 ---
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
-<head>
-    <meta name="baidu-site-verification" content="Ct3VRqWb90" />
-    <meta name="360-site-verification" content="e956fd79a28bbedbf5d9faee8b189cd5" />
-    <meta name="google-site-verification" content="t-jxiuv23EFHE3-oZFMOd1-RBeY2X1DvfMb7yiqt94s" />
-    <title>{{ site.title }}</title>
-    {% include head.html %}
-</head>
-<body unselectable="on" style="background:#1a222c;-moz-user-select:none;-webkit-user-select:none;" onselectstart="return false;">
-    {% include nav.html %}
-    <!-- Header -->
-    <header class="header flex" role="banner" id="particles-js">
-            <div class="container animated fadeIn">
-                <div class="row">
-                        <h3 class="title">
-                            {{ site.title }}
-                        </h3>
-                        <h3 class="title">
-                            {{ site.bio }}
-                        </h3>
-                        {% include social-links.html %}
-                        <h3 class="title">
-                            <a class="blog-btn zoombtn" href="{{ site.url }}/posts">博客</a>
-                            <a class="blog-btn zoombtn" href="{{ site.url }}/projects">项目</a>
-                            <a class="blog-btn zoombtn" href="{{ site.url }}/tags">标签</a>
-                        </h3>
-                </div>
-            </div>
-            <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1389" height="925"></canvas> 
-    </header>
-    {% include background.html %}
-    {% include scripts.html %}
-    {% include leancloud-analytics.html %}
-</body>
-</html>
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}

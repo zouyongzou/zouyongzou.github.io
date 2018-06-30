@@ -1,87 +1,222 @@
-# Site
-title:              邹勇的个人空间
-bio:                "['1'] == 1"
-description:        "邹勇的个人空间"
-keywords:           "Web前端, 前端开发, 邹勇博客, 个人博客"
-#reading_time:       true
-words_per_minute:   200
-logo:               'assets/img/logo.png'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-#background:         http://i.imgur.com/Ds6S7lJ.png
-locale:             en_US
-url:                https://zouyongzou.github.io
-#url:                http://127.0.0.1:4000
+# Welcome to Jekyll!
+
+# Site Settings
+locale                   : "zh"
+title                    : "zouyong&apos;s personal website"
+masthead_title           : "Hello, world"
+favicon                  : "/assets/images/favicon.png?v=2"
+title_separator          : "-"
+name                     : &name "Zou Yong"
+description              : &description "zouyong&apos;s personal website"
+keywords                 : "Web前端, 前端开发, personal website, 个人博客, 个人网站"
+url                      : https://zouyongzou.github.io
+baseurl                  : ""
+repository               : "zouyongzou/zouyongzou.github.io"
+teaser                   : '' # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs              : true
+words_per_minute         : 100
+comments:
+  provider               : "disqus"
+  disqus:
+    shortname            : zouyongzou
+
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
+# Search
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : lunr # lunr (default), algolia, google
+
+# SEO Related
+google_site_verification : "t-jxiuv23EFHE3-oZFMOd1-RBeY2X1DvfMb7yiqt94s"
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
 
 
-# Jekyll
-permalink:          /:title/
-markdown:           kramdown
-excerpt_separator:  "<!--more-->"
-highlighter:        rouge
+# Analytics
+analytics:
+  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : "UA-106168277-1"
+
+
+# Site Author
+author:
+  name             : *name
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "好好学习，天天写 bug"
+  location         : "C.S, China"
+  email            :  zouyongzou#foxmail.com
+  uri              : "https://zouyongsite.com"
+  github           : "zouyongzou"
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    :
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
 kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            false
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Collections
+collections:
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: false
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+# Sass/SCSS
 sass:
-  sass_dir:         _sass
-  style:            compressed
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-# Comments
-disqus_shortname:   zouyongzou
 
-# 阅读次数
-leancloud:
-  enable: true
-  app_id: 9wsnJbHIUAY3d4PrKsg6q92H-gzGzoHsz
-  app_key: mAEpionhrt3pmDw3Lol6sRoN
+# Outputting
+permalink: /:categories/:title/
+paginate: 10 # amount of posts to show
+paginate_path: /blog/page:num/
+# timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-# Social
-# if you don't have any of social below, comment the line.
-google:
-  #plus:            username
-  analytics:       true
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-#twitter:            username
-#facebook:           username
-github-url:         zouyongzou
-email:              zouyongzou@foxmail.com
-qq:                 http://wpa.qq.com/msgrd?v=3&uin=854479948&site=qq&menu=yes
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-#instagram:         username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-#steam:             username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-# weibo:            username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
 
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-feed
+# Plugins
+plugins:
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
-jekyll-mentions:
-    base_url: https://github.com
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

@@ -1,4 +1,6 @@
-# Site navigation links
-
-- title: Projects
-  url: /projects/
+# main links
+main:
+  - title: "博客"
+    url: /blog/
+  - title: "关于"
+    url: /about/
