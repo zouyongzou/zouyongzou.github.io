@@ -3,8 +3,6 @@ title: "Minimal Mistakes Jekyll Theme 文档"
 excerpt: "Minimal Mistakes Jekyll Theme 文档"
 comments: true
 search: true
-categories: 
-  - document
 tags:
   - Jekyll
 last_modified_at: 2018-06-21

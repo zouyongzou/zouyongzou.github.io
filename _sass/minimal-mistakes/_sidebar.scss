@@ -141,12 +141,15 @@
       border: 1px solid $border-color;
     }
   }
-  img:hover {
-    transform: rotate(600turn);
-    transition-delay: 0s;
-    transition-property: all;
-    transition-duration: 60s;
-    transition-timing-function: cubic-bezier(.34,0,.84,1);
+  
+  @include breakpoint(min-width $large) {
+    img:hover {
+      transform: rotate(600turn);
+      transition-delay: 0s;
+      transition-property: all;
+      transition-duration: 60s;
+      transition-timing-function: cubic-bezier(.34,0,.84,1);
+    }
   }
 }
 

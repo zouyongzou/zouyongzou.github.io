@@ -1,5 +1,5 @@
 ---
-title:    "Vue + Node 开发"
+title:    "Vue + Node 全栈开发"
 date:     2017-4-28
 excerpt:  搭建了一个 Vue + Node + MySQL 的项目。前端用 Vue 开发页面，路由通过 axios 实现；后端用 Node 开发 api
 tags:     [Vue, Node.js]
