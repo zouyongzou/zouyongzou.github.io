@@ -3,8 +3,7 @@ title: "小程序从开发到上线（二）- 搭建生产环境"
 excerpt: "在 nginx 服务器上安装 Python3、mongoDB 和 supervisor，以及如何使用 supervisor 管理进程"
 comments: true
 search: true
-categories: 
-  - mini program
+tag: [小程序]
 toc: true
 toc_sticky: true
 ---

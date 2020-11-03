@@ -2,19 +2,19 @@
 
 # Site Settings
 locale                   : "zh"
-title                    : "zouyong&apos;s personal website"
+title                    : "个人网站"
 masthead_title           : "Hello, world"
 favicon                  : "/assets/images/favicon.png?v=2"
 title_separator          : "-"
 name                     : &name "Zou Yong"
-description              : &description "zouyong&apos;s personal website"
+description              : &description "个人网站-zouyong&apos;s personal website"
 keywords                 : "Web前端, 前端开发, personal website, 个人博客, 个人网站"
 url                      : https://zouyongzou.github.io
 baseurl                  : ""
 repository               : "zouyongzou/zouyongzou.github.io"
 teaser                   : '' # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true
-words_per_minute         : 100
+words_per_minute         : 20
 comments:
   provider               : "disqus"
   disqus:
@@ -47,9 +47,9 @@ author:
   name             : *name
   avatar           : "/assets/images/avatar.jpg"
   bio              : "好好学习，天天写 bug"
-  location         : "C.S, China"
+  location         : "C.S"
   email            :  zouyongzou#foxmail.com
-  uri              : "https://zouyongsite.com"
+  uri              : "https://zouyongzou.github.io"
   github           : "zouyongzou"
   bitbucket        :
   codepen          :

@@ -13,4 +13,4 @@ author_profile: false
 - 按年分类(year)：[{{ '/years/' | absolute_url}}]({{ '/years/' | absolute_url}})
 
 ## 联系
-- QQ: 854479948
+- 微信号: Z854479948
